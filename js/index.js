@@ -69,9 +69,10 @@
 //var zmienna1 = "Marcin";function nazwaFunkcji() {//console.log("Funkcja coś wyświetla");}return "Witaj";}nazwaFunkcji();
 //var zmienna = nazwaFunkcji();console.log
 
-var number=prompt("Podaj liczbę");
+var num=prompt("Podaj liczbę");
 
-if(number%2)
-{document.write(""+number+" jest liczbą nieparzystą");}
+if(isNaN(num)){console.log("Podana wartość nie jest liczbą")}
+else if (num%2)
+{console.log("jest liczbą nieparzystą");}
 else
-{document.write(""+number+" jest liczbą parzystą")};
+{console.log("jest liczbą parzystą")};
